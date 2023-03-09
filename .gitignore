@@ -1,0 +1,19 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+
+# Keys
+*.pem
+
+# Build files
+.tsbuildinfo
+/public/*.d.ts
+/public/*.js
+/public/*.map
+/server/

@@ -1,0 +1,20 @@
+{
+  "name": "webrtc-blog",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc --build",
+    "watch": "tsc --build --watch",
+    "start": "nodemon --watch server --watch public --ext '*' server"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/ws": "^8.5.4",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.12.0"
+  }
+}

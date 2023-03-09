@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Simple Chat</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="module" src="main.js"></script>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<main data-peer="" data-state="" data-camera="">
+			<h1>Simple Chat</h1>
+
+			<div id="content">
+				<div id="video-box">
+					<div class="video" id="peer-video-box">
+						<video id="peer-video" autoplay playsinline></video>
+						<div class="video-placeholder">Waiting for peer...</div>
+					</div>
+					<div class="video" id="user-video-box">
+						<video id="user-video" muted autoplay playsinline></video>
+						<div class="video-placeholder">Attaching to camera...</div>
+					</div>
+
+					<select id="peer" disabled>
+						<option value="">Select a peer...</option>
+					</select>
+
+					<button id="disconnect">❌</button>
+
+					<div id="video-controls">
+						<div class="control" id="name-control">
+							<input id="name" size="10" autocomplete="off" type="text" />
+						</div>
+						<div class="control" id="camera-control">
+							<select id="camera">
+								<option value=""></option>
+							</select>
+						</div>
+						<div class="control" id="audio-control">
+							<input id="audio" type="checkbox" />
+						</div>
+					</div>
+				</div>
+
+				<div id="chat">
+					<div id="chat-messages">
+						<ul></ul>
+					</div>
+					<div id="chat-input-box">
+						<input disabled type="text" id="chat-input" />
+						<span id="chat-input-prompt">⟩</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div> -->
+			<!-- 	<pre id="console"></pre> -->
+			<!-- </div> -->
+		</main>
+	</body>
+	<!-- </html> -->
+</html>
